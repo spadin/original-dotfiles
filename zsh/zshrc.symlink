@@ -1,6 +1,7 @@
 # Initialize Oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="steeef"
+export DISABLE_UPDATE_PROMPT=true
 
 plugins=(git bundler)
 source $ZSH/oh-my-zsh.sh
