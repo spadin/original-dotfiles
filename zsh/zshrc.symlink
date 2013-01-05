@@ -28,6 +28,3 @@ compinit
 
 # load every completion after autocomplete loads
 for config_file ($DOTFILES/**/completion.sh) source $config_file
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
