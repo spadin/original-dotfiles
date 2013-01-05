@@ -4,5 +4,6 @@ export PATH=$HOME/.rbenv/bin:$PATH
 export PATH=/usr/local/pgsql/bin:$PATH
 # export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 export PATH="./bin:$HOME/.rbenv/shims:$DOTFILES/bin:$PATH"
+export PATH="/usr/local/share/python:$PATH"
 
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
