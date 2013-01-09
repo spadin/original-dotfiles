@@ -62,14 +62,10 @@ zstyle ':vcs_info:*:prompt:*' nvcsformats   ""
 
 
 function steeef_preexec {
-    case "$(history $HISTCMD)" in
-        *git*)
-            PR_GIT_UPDATE=1
-            ;;
-        *svn*)
-            PR_GIT_UPDATE=1
-            ;;
-    esac
+    if [[ "${2[(w)1]}" == (git|svn) ]]; then
+        echo "SET IT"
+        PR_GIT_UPDATE=1
+    fi
 }
 add-zsh-hook preexec steeef_preexec
 
