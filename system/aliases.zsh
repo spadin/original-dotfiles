@@ -9,5 +9,5 @@ then
   alias la='gls -A --color'
 fi
 
-alias cpwd="pwd|pbcopy"
-alias issues="ghi"
+alias cwd="pwd|pbcopy"
+alias cls="osascript -e 'tell application \"System Events\" to keystroke \"k\" using command down'"
