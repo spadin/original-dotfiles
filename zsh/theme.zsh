@@ -62,7 +62,7 @@ zstyle ':vcs_info:*:prompt:*' nvcsformats   ""
 
 
 function steeef_preexec {
-    # PR_GIT_UPDATE=1
+    PR_GIT_UPDATE=1
     case "$(history $HISTCMD)" in
         (*git*)
             PR_GIT_UPDATE=1
@@ -100,5 +100,11 @@ function steeef_precmd {
 add-zsh-hook precmd steeef_precmd
 
 PROMPT=$'
-%{$purple%}%n%{$reset_color%} at %{$orange%}%m%{$reset_color%} in %{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_
-$(virtualenv_info)$ '
+%{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_
+$ '
+
+#PROMPT=$'
+#%{$purple%}%n%{$reset_color%} at %{$orange%}%m%{$reset_color%} in %{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_
+#$(virtualenv_info)$ '
+
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
