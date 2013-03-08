@@ -2,6 +2,7 @@ bind-key r source-file ~/.tmux.conf \; display "Config reloaded!"
 
 setw -g mode-keys vi
 
+set-window-option -g xterm-keys on
 set -g default-terminal "screen-256color"
 
 set -g prefix C-z
