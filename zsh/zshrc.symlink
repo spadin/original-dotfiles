@@ -20,3 +20,9 @@ compinit
 
 # load every completion after autocomplete loads
 for config_file ($DOTFILES/**/completion.sh) source $config_file
+
+function rvm () {
+  if [[ $1 == 'use' ]]; then
+    rbenv shell $2
+  fi
+}
