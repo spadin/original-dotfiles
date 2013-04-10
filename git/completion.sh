@@ -29,8 +29,8 @@ __git_shortcut () {
   complete -o default -o nospace -F _git_$2_shortcut $1 
 } 
 
-__git_shortcut  gb    branch 
-__git_shortcut  gco   checkout 
+__git_shortcut  gb    branch
+__git_shortcut  gco   checkout
 # __git_shortcut  ga    add 
 # __git_shortcut  gba   branch -a 
 # __git_shortcut  gci   commit -v 
