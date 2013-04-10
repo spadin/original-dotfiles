@@ -9,5 +9,7 @@ then
   alias la='gls -A --color'
 fi
 
+alias kat="pygmentize -f terminal -g"
+
 alias cwd="pwd|pbcopy"
 alias cls="osascript -e 'tell application \"System Events\" to keystroke \"k\" using command down'"
