@@ -59,3 +59,5 @@ set -g window-status-format "#[fg=colour243,bg=colour237] #I: #W "
 set-window-option -g window-status-current-format "#[fg=colour255, bg=colour25] #I: #W "
 
 bind-key v command-prompt -p "join pane vertically from:"  "join-pane -v -s '%%'"
+
+set-environment -gu RBENV_VERSION
