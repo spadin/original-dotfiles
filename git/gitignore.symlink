@@ -2,6 +2,7 @@
 .svn
 .tissues
 .NOTES.md
+bin/
 *~
 *.swp
 *.rbc
