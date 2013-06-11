@@ -1,0 +1,52 @@
+[user]
+	name = Sandro Padin
+	email = sandropadin@gmail.com
+[github]
+	user = spadin
+	token = bbb61a1431b90b7406ef17d6218f8b5e
+[core]
+	quotepath = false
+	excludesfile = /Users/sandropadin/.gitignore
+[alias]
+  co = checkout
+  # Log display from screencast, with train tracks.
+  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  # Alternate log display from Scott Chacon
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  # Other useful aliases:
+  unstage = reset HEAD
+  staged = diff --cached
+  unstaged = diff
+  current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+  # Usage: git track origin/feature-123-login-form
+  track = checkout -t
+
+  ignore = !git update-index --assume-unchanged 
+  unignore = !git update-index --no-assume-unchanged
+  ignored = !git ls-files -v | grep ^[a-z]
+[apply]
+  whitespace = warn
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+;[color "branch"]
+  ;current = yellow reverse
+  ;local = yellow
+  ;remote = green
+;[color "diff"]
+  ;meta = yellow bold
+  ;frag = magenta bold
+  ;old = red
+  ;new = cyan
+;[color "status"]
+  ;added = yellow
+  ;changed = green
+  ;untracked = cyan
+[help]
+  autocorrect = 1
+[status]
+  submodule = 1
+[push]
+  # Only push branches that have been set up to track a remote branch.
+  default = current
