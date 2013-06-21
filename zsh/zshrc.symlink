@@ -19,7 +19,7 @@ autoload -U compinit
 compinit
 
 # load every completion after autocomplete loads
-for config_file ($DOTFILES/**/completion.sh) source $config_file
+# for config_file ($DOTFILES/**/completion.sh) source $config_file
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
