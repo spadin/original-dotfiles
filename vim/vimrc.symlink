@@ -1,0 +1,2 @@
+source ~/.dotfiles/vim/autoload/pathogen.vim
+execute pathogen#infect('~/.dotfiles/vim/bundle/{}')
