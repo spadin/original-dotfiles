@@ -1,14 +1,3 @@
-# shell thing
-rbenv() {
-  command="$1"
-  if [ "$#" -gt 0 ]; then
-    shift
-  fi
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-  case "$command" in
-  shell)
-    eval `rbenv "sh-$command" "$@"`;;
-  *)
-    command rbenv "$command" "$@";;
-  esac
-}
