@@ -3,9 +3,10 @@ export GOPATH=$HOME/Projects/go
 
 # PATH
 export PATH=/usr/local/sbin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:/Users/sandropadin/bin
-export PATH=$HOME/.rbenv/bin:$PATH
+export PATH=/usr/local/var/rbenv/shims:$PATH
+export PATH=/usr/local/var/rbenv/bin:$PATH
 export PATH=/usr/local/pgsql/bin:$PATH
-export PATH="./bin:$HOME/.rbenv/shims:$DOTFILES/bin:$PATH"
+export PATH="$DOTFILES/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
