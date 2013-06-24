@@ -2,6 +2,8 @@
 source ~/.dotfiles/vim/autoload/pathogen.vim
 execute pathogen#infect('~/.dotfiles/vim/bundle/{}')
 
+let g:Powerline_symbols = 'fancy'
+
 " Set the colorscheme to solarized.
 set background=dark
 colorscheme solarized
@@ -56,3 +58,7 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
