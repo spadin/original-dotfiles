@@ -37,9 +37,12 @@ set noshowmode
 set nowrap
 set nonumber
 set hlsearch
+set ignorecase
+set smartcase
 
 au BufNewFile,BufRead *.hiccup set filetype=clojure
 au BufNewFile,BufRead *.cljs set filetype=clojure
+au BufNewFile,BufRead *.scss set filetype=scss
 au FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist
 au FileType go autocmd BufWritePre <buffer> Fmt
 
@@ -62,3 +65,15 @@ set expandtab
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+set ttyfast
+set mouse=a
+set ttymouse=xterm2
+set lazyredraw
+
+" CommandT settings
+let g:CommandTMaxHeight=20
+set wildignore+=build
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/

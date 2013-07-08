@@ -13,6 +13,8 @@
   l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
   # Alternate log display from Scott Chacon
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  # list changed files
+  diff-list = diff-tree --no-commit-id --stat --color
   # Other useful aliases:
   unstage = reset HEAD
   staged = diff --cached
