@@ -25,5 +25,5 @@ function current_branch() {
   echo ${ref#refs/heads/}
 }
 
-alias ggpull='git pull origin $(current_branch)'
+alias ggpull='git pull --rebase origin $(current_branch)'
 alias ggpush='git push origin $(current_branch)'
