@@ -80,3 +80,9 @@ match ExtraWhitespace /\s\+$/
 
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
+
+function! s:setupMarkup()
+  nnoremap <leader>p :silent !open -a Marked.app '%:p'<cr>
+endfunction
+
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
