@@ -2,6 +2,7 @@
 .svn
 .tissues
 .NOTES.md
+.ruby-version
 bin/
 *~
 *.swp
