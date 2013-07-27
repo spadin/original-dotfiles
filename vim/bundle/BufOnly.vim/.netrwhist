@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/sandropadin/code/clients/ideo/zatar'
+let g:netrw_dirhist_2='/Users/sandropadin/code/clients/ideo/zatar/source/javascripts/spec/views'
+let g:netrw_dirhist_3='/Users/sandropadin/code/clients/ideo/zatar/source/javascripts/spec/models'
+let g:netrw_dirhist_4='/Users/sandropadin/code/clients/ideo/zatar/source/javascripts/templates/spleets/lists'

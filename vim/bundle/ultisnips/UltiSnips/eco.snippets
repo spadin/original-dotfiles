@@ -1,0 +1,27 @@
+snippet if "if snippet"
+<% if ${1:something}: %>
+$0
+<% end %>
+endsnippet
+
+snippet end "end snippet"
+<% end %>
+endsnippet
+
+snippet else "else snippet"
+<% else: %>
+endsnippet
+
+snippet = "interpretation snippet" i
+<%= ${1} %>
+endsnippet
+
+snippet - "raw content snippet" i
+<%- ${1} %>
+endsnippet
+
+snippet < "block snippet"
+<% ${1}: %>
+	${2}
+<% end %>
+endsnippet
