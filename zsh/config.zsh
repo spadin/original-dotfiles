@@ -48,3 +48,4 @@ bindkey '^?' backward-delete-char
 
 bindkey '^[[1;5D' beginning-of-line # ctrl-<left arrow>
 bindkey '^[[1;5C' end-of-line       # ctrl-<right arrow>
+bindkey '^R' history-incremental-search-backward
