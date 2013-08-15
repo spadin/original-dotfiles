@@ -11,6 +11,7 @@ colorscheme solarized
 silent !stty -ixon > /dev/null 2>/dev/null
 
 :noremap <F2> :NERDTreeToggle<CR>
+:nmap <leader>r :NERDTreeFind<CR>
 :inoremap <c-a> <Esc>
 :inoremap jk <Esc>
 :nnoremap <Esc><Esc> :nohl<CR>
