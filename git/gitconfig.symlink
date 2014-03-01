@@ -11,8 +11,12 @@
   co = checkout
   # Log display from screencast, with train tracks.
   l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  # List files changed
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
   # Alternate log display from Scott Chacon
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  # list changed files
+  diff-list = diff-tree --no-commit-id --stat --color
   # Other useful aliases:
   unstage = reset HEAD
   staged = diff --cached
@@ -21,7 +25,10 @@
   # Usage: git track origin/feature-123-login-form
   track = checkout -t
 
-  ignore = !git update-index --assume-unchanged 
+  # Zip archive of current branch
+  zip = !sh -c 'git archive --format zip --output $1 `git rev-parse --symbolic-full-name --abbrev-ref HEAD`' -
+
+  ignore = !git update-index --assume-unchanged
   unignore = !git update-index --no-assume-unchanged
   ignored = !git ls-files -v | grep ^[a-z]
 [apply]
