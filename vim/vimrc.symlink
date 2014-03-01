@@ -47,10 +47,7 @@ let g:turbux_command_cucumber = 'bundle exec cucumber'
 set splitright
 set splitbelow
 
-let g:CommandTCancelMap=["<ESC>","<C-c>"]
-let g:CommandTRefreshMap=["<F5>","<C-f>"]
-nnoremap <silent> <C-t> :CommandT<CR>
-nnoremap <silent> <C-b> :CommandTBuffer<CR>
+let g:ctrlp_map = '<c-t>'
 
 set smartindent
 set tabstop=2

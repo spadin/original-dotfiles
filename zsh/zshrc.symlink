@@ -21,6 +21,9 @@ compinit
 # load every completion after autocomplete loads
 # for config_file ($DOTFILES/**/completion.sh) source $config_file
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export RBENV_ROOT=/usr/local/var/rbenv
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
